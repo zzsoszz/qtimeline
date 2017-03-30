@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html5</title>
+	<style>
+		.timelinebox{
+			background:#000;
+			overflow:hidden;
+			padding:300px 0;
+			width:50%;
+			float:left;
+		}
+		.timelinebox .timeitem{
+			height:5px;
+			background:#4fb7e2;
+			position: relative;
+		}
+		.timelinebox .timeitem .top{
+			position:absolute;
+		}
+		.timelinebox .timeitem .dot{
+			position:absolute;
+			background:#4fb7e2;
+			border-radius:50%;
+			width:30px;
+			height:30px;
+			top:50%;
+			left:10%;
+			transform: translate(-50%,-50%);
+		}
+		.timelinebox .timeitem .dot .verticalline{
+			position:absolute;
+			background:#4fb7e2;
+			width:2px;
+			height:50px;
+			left:50%;
+			bottom:0;
+			transform: translate(-50%);
+		}
+		.timelinebox .timeitem .dot .verticalline .time{
+			position:absolute;
+			left:-10px;
+			top:0;
+			transform:translate(0,-100%);
+			background:#4fb7e2;
+			color:#fff;
+			width:10em;
+			height:2em;
+			line-height:2em;
+			text-align: center;
+			border-radius:0.2em;
+			font-size:20px;
+		}
+		.timelinebox .timeitem .dot .top{
+			color:#fff;
+			position:absolute;
+			top:-150px;
+			width: max-content;
+			font-size:25px;
+			font-weight:700;
+		}
+		.timelinebox .timeitem .dot .bottom{
+			position:absolute;
+			left:-10px;
+			top:50px;
+			width: max-content;
+		}
+		.timelinebox .timeitem .dot .bottom img{
+			padding:5px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="timelinebox">
+		<div class="timeitem">
+			<div class="dot">
+				<div class="verticalline">
+					<div class="time">2010-02-03</div>
+				</div>
+				<div class="top">
+					企业战略与国家区域阿斯蒂芬是否
+				</div>
+				<div class="bottom">
+					<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+					<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+					<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="timelinebox">
+		<div class="timeitem">
+			<div class="dot">
+				<div class="verticalline">
+					<div class="time">2010-02-03</div>
+				</div>
+				<div class="top">
+					企业战略与国家区域阿斯蒂芬是否
+				</div>
+				<div class="bottom">
+					<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+					<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+					<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+</html>

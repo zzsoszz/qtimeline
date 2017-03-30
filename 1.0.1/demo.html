@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bossapp</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="plugin.css">
+
+	<script type="text/javascript" src="js/TweenMax.js"></script>
+	<script type="text/javascript" src="js/TimelineMax.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lodash.min.js"></script>
+	<script type="text/javascript" src="plugin.js"></script>
+	
+	<style>
+		
+		.timelinebox{
+			background:#000;
+			overflow:hidden;
+			padding:300px 0;
+		}
+		.timelinebox .timeitem{
+			height:5px;
+			background:#4fb7e2;
+			position: relative;
+		}
+		.timelinebox .timeitem .top{
+			position:absolute;
+		}
+		.timelinebox .timeitem .dot{
+			position:absolute;
+			background:#4fb7e2;
+			border-radius:50%;
+			width:30px;
+			height:30px;
+			top:50%;
+			left:10%;
+			transform: translate(-50%,-50%);
+		}
+		.timelinebox .timeitem .dot .verticalline{
+			position:absolute;
+			background:#4fb7e2;
+			width:2px;
+			height:50px;
+			left:50%;
+			bottom:0;
+			transform: translate(-50%);
+		}
+		.timelinebox .timeitem .dot .verticalline .time{
+			position:absolute;
+			left:-10px;
+			top:0;
+			transform:translate(0,-100%);
+			background:#4fb7e2;
+			color:#fff;
+			width:10em;
+			height:2em;
+			line-height:2em;
+			text-align: center;
+			border-radius:0.2em;
+			font-size:20px;
+		}
+		.timelinebox .timeitem .dot .top{
+			color:#fff;
+			position:absolute;
+			top:-150px;
+			width: max-content;
+			font-size:25px;
+			font-weight:700;
+		}
+		.timelinebox .timeitem .dot .bottom{
+			position:absolute;
+			left:-10px;
+			top:50px;
+			width: max-content;
+		}
+		.timelinebox .timeitem .dot .bottom img{
+			padding:5px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div style="background:#282828;margin-top:200px;padding:50px;">
+		<h1 style="color:#fff;text-align: center;">导师介绍</h1>
+		<div>
+			<div class="qslidemultiply">
+				<div class="qslideviewbox">
+					<div class="item" style="display:block;">
+						<div class="timelinebox">
+							<div class="timeitem">
+								<div class="dot">
+									<div class="verticalline">
+										<div class="time">2010-02-03</div>
+									</div>
+									<div class="top">
+										企业战略与国家区域阿斯蒂芬是否
+									</div>
+									<div class="bottom">
+										<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+										<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+										<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item" style="display:block;">
+						<div class="timelinebox">
+							<div class="timeitem">
+								<div class="dot">
+									<div class="verticalline">
+										<div class="time">2010-02-03</div>
+									</div>
+									<div class="top">
+										企业战略与国家区域阿斯蒂芬是否
+									</div>
+									<div class="bottom">
+										<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+										<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+										<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item" style="display:block;">
+						<div class="timelinebox">
+							<div class="timeitem">
+								<div class="dot">
+									<div class="verticalline">
+										<div class="time">2010-02-03</div>
+									</div>
+									<div class="top">
+										企业战略与国家区域阿斯蒂芬是否
+									</div>
+									<div class="bottom">
+										<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+										<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+										<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item" style="display:block;">
+						<div class="timelinebox">
+							<div class="timeitem">
+								<div class="dot">
+									<div class="verticalline">
+										<div class="time">2010-02-03</div>
+									</div>
+									<div class="top">
+										企业战略与国家区域阿斯蒂芬是否
+									</div>
+									<div class="bottom">
+										<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+										<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+										<img src="images/teacheravatar.png" style="max-width:120px;max-height:160px" >
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="next">
+				</div>
+				<div class="prev">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script>
+jQuery(window).ready(function() {
+
+	$(".qslidemultiply").qslidemultiply({
+		pagesize:2,
+		speed:0.5
+	});
+	
+});
+</script>
+<!-- END PAGE LEVEL SCRIPTS -->
+
+
+
+</html>
